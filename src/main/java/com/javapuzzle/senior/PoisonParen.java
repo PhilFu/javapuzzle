@@ -18,6 +18,12 @@ public class PoisonParen {
 		System.out.println(x == y);
 		System.out.println(y == z);
 		System.out.println(x == z);
+
+		int a = 111;
+		int b = 222;
+		b = (a ^= (b ^= a)) ^ b;
+		System.out.println(a);
+		System.out.println(b);
 	}
 
 }
